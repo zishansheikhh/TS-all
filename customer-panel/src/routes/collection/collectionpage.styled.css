@@ -1,0 +1,66 @@
+.collection-grid-wrapper {
+    width: 99%;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.col-left, 
+.col-right {
+    width: 100%;
+}
+.collection-banner-card {
+    max-width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    transition: none;
+}
+.card-height-1 {
+    height: 340px;
+}
+.card-height-2 {
+    height: 280px;
+}
+.anime{
+    background-image: url(../../assets/categories/collection_page_banner\ \(1\).jpg);
+}
+.marvel{
+    background-image: url(../../assets/categories/collection_page_banner\ \(2\).jpg);
+}
+.mtshirt{
+    background-image: url(../../assets/categories/collection_page_banner\ \(3\).jpg);
+}
+.bitmoji{
+    background-image: url(../../assets/categories/collection_page_banner\ \(4\).jpg);
+}
+.womentshirt{
+    background-image: url(../../assets/categories/collection_page_banner\ \(10\).jpg);
+}
+.menshirt{
+    background-image: url(../../assets/categories/collection_page_banner\ \(5\).jpg);
+}
+.womenshirt{
+    background-image: url(../../assets/categories/collection_page_banner\ \(6\).jpg);
+}
+.modest{
+    background-image: url(../../assets/categories/collection_page_banner\ \(7\).jpg);
+}
+.collection-title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 5%, rgba(255,67,0,0.5775560224089635) 100%);
+}
+.collection-title h3 {
+    font-size: 1rem;
+    font-weight: 100 !important;
+    color: #FFF;
+}

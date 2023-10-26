@@ -1,0 +1,26 @@
+.desktop-banner-container { 
+    display: none;
+}
+.mobile-banner-container {
+    margin: 20px 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobile-banner-container .banner {
+    width: 100%;
+    margin: -20px auto;
+}
+/* Media Query */
+@media (min-width: 999px) {
+    .desktop-banner-container {
+        display: block;
+    }
+    .desktop-banner-container .banner {
+        width: 100%;
+    }
+    .mobile-banner-container {
+        display: none;
+    }
+}

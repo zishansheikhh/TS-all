@@ -1,0 +1,26 @@
+.cylinder-container {
+    height: 150px;
+}
+
+.cylinder-image-box {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #CCC5B9;
+    background-color: #CCC5B9;
+    border-radius: 10px;
+}
+
+.quantity-toggle {
+    width: 85px;
+    height: 25px;
+    border: 1px solid #CCC5B9;
+    background-color: #CCC5B9;
+    border-radius: 6px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.quantity-elements {
+    padding: 0 6px 0 6px;
+    cursor: pointer;
+}

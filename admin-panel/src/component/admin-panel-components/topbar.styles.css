@@ -1,0 +1,39 @@
+.topbar-container {
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
+    background-color: #14232E;
+    color: #fff;
+    position: relative;
+}
+.topbar-wrapper {
+    width: 80%;
+    margin: auto;
+}
+.topbar-wrapper img {
+    width: 80px;
+}
+.sidebar-container {
+    background-color: #14232E;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+}
+.sidebar-wrapper {
+    padding: 10px;
+}
+.sidebar-wrapper img {
+    width: 100px;
+}
+.sidebar-wrapper ul {
+    padding-left: 0;
+}
+.sidebar-wrapper ul li {
+    list-style: none;
+}
+.sidebar-wrapper ul li a {
+    line-height: 40px;
+    color: #fff;
+}

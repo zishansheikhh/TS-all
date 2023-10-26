@@ -1,0 +1,469 @@
+/*
+  This is a pre-made CSS code by Nitrosk - Web and Ai Development 
+ */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./font/Raleway/Raleway-Regular.ttf) format('TrueType');
+}
+@font-face {
+  font-family: "RalewayBold";
+  src: url(./font/Raleway/Raleway-Bold.ttf) format('TrueType');
+}
+/* ============ Default CSS ============ */
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: RalewayBold;
+}
+p, 
+a {
+  font-family: Raleway;
+}
+.container {
+  width: 100% !important;
+}
+.container-fluid {
+  width: 90% !important;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.main-logo {
+  width: 120px;
+}
+.main-logo-lg {
+  width: 200px;
+}
+.main-logo-med {
+  width: 100px;
+}
+.main-logo-small {
+  width: 80px;
+}
+.cursor-p {
+  cursor: pointer;
+}
+/* z-index */
+.zindex-dropdown {
+  z-index: 1000;
+}
+.zindex-sticky {
+  z-index: 1020;
+}
+.zindex-fixed {
+  z-index: 1030;
+}
+.zindex-modal-backdrop {
+  z-index: 1040;
+}
+.zindex-offcanvas {
+  z-index: 1050;
+}
+.zindex-modal {
+  z-index: 1060;
+}
+.zindex-popover {
+  z-index: 1070;
+}
+.zindex-tooltip {
+  z-index: 1080;
+}
+/* Default colors */
+.transparent-bg {
+  background: transparent;
+}
+.dngr {
+  color: #F8481C;
+}
+.success {
+  color: rgb(131, 225, 90);
+}
+.wrning {
+  color: #FEDF08;
+}
+.primary-bg {
+  background: #fff;
+}
+.light-text {
+  color: #fff;
+}
+.primary-text {
+  color: #252422;
+}
+.secondary-text {
+  color: #403D39;
+}
+.dark-bg {
+  background: #252422;
+}
+.cta-link {
+  color: #EB5E28;
+}
+.cta-link-2 {
+  color: #3BCE5B;
+}
+.cta-btn-text {
+  color: #fff;
+}
+.cta-btn-bg {
+  background: #EF8354;
+}
+.cta-btn-bg-2 {
+  background: #3BCE5B;
+}
+/* Seller panel colors */
+.seller-dark-bg {
+  background: #475f94;
+}
+.seller-bg-1 {
+  background: #9BA4C4;
+}
+.seller-bg-2 {
+  background: #B3BEE5;
+}
+/* Admin panel colors */
+.admin-dark-bg {
+  background: #475f94;
+}
+
+/* Transparency */
+.opacity-80 {
+  opacity: 80%;
+}
+.opacity-60 {
+  opacity: 60%;
+}
+.opacity-50 {
+  opacity: 50%;
+}
+.opacity-30 {
+  opacity: 30%;
+}
+.opacity-20 {
+  opacity: 20%;
+}
+/* Text */
+.f-size-0 {
+  font-size: 0.75rem;
+}
+.f-size-1 {
+  font-size: 1.5rem;
+}
+.f-size-2 {
+  font-size: 2rem;
+}
+.f-size-3 {
+  font-size: 2.5rem;
+}
+.f-size-4 {
+  font-size: 2.75rem;
+}
+.f-size-5 {
+  font-size: 3rem;
+}
+.f-weight-100 {
+  font-weight: 100;
+}
+.f-weight-200 {
+  font-weight: 200;
+}
+.f-weight-400 {
+  font-weight: 400;
+}
+.f-weight-600 {
+  font-weight: 600;
+}
+.f-weight-800 {
+  font-weight: 800;
+}
+.decoration-none {
+  text-decoration: none;
+}
+/* Display */
+.d-none {
+  display: none;
+}
+.d-inline {
+  display: inline;
+}
+.d-in-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+/* flex custom */
+
+.jc-space-btw {
+  justify-content: space-between;
+}
+.jc-center {
+  justify-content: center;
+}
+.fd-col {
+  flex-direction: column;
+}
+.al-item-cen {
+  align-items: center;
+}
+/* Sizing */
+.w-auto {
+  width: auto;
+}
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-100 {
+  width: 100%;
+}
+.h-auto {
+  height: auto;
+}
+.h-25 {
+  height: 25%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-100 {
+  height: 100%;
+}
+.h-fullscreen {
+  height: 100vh;
+}
+/* Spacing */
+.m-0 {
+  margin: 0px;
+}
+
+.m-auto {
+  margin: auto;
+}
+.m-1 {
+  margin: 10px;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mt-3 {
+  margin-top: 2rem;
+}
+.mt-4 {
+  margin-top: 3rem;
+}
+.mt-5 {
+  margin-top: 3.5rem;
+}
+.ml-1 {
+  margin-left: 0.25rem;
+}
+.ml-2 {
+  margin-left: 1rem;
+}
+.ml-3 {
+  margin-left: 2rem;
+}
+.ml-4 {
+  margin-left: 3rem;
+}
+.ml-5 {
+  margin-left: 3.5rem;
+}
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.mr-2 {
+  margin-right: 1rem;
+}
+.mr-3 {
+  margin-right: 2rem;
+}
+.mr-4 {
+  margin-right: 3rem;
+}
+.mr-5 {
+  margin-right: 3.5rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.mb-3 {
+  margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 3rem;
+}
+.mb-5 {
+  margin-bottom: 3.5rem;
+}
+.padding-5 {
+  padding: 5px;
+}
+.padding-10 {
+  padding: 10px;
+}
+.padding-20 {
+  padding: 20px;
+}
+.pt-1 {
+  padding-top: 0.25rem;
+}
+.pt-2 {
+  padding-top: 1rem;
+}
+.pt-3 {
+  padding-top: 2rem;
+}
+.pt-4 {
+  padding-top: 3rem;
+}
+.pt-5 {
+  padding-top: 3.5rem;
+}
+.pl-1 {
+  padding-left: 0.25rem;
+}
+.pl-2 {
+  padding-left: 1rem;
+}
+.pl-3 {
+  padding-left: 2rem;
+}
+.pl-4 {
+  padding-left: 3rem;
+}
+.pl-5 {
+  padding-left: 3.5rem;
+}
+.pr-1 {
+  padding-right: 0.25rem;
+}
+.pr-2 {
+  padding-right: 1rem;
+}
+.pr-3 {
+  padding-right: 2rem;
+}
+.pr-4 {
+  padding-right: 3rem;
+}
+.pr-5 {
+  padding-right: 3.5rem;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+.pb-2 {
+  padding-bottom: 1rem;
+}
+.pb-3 {
+  padding-bottom: 2rem;
+}
+.pb-4 {
+  padding-bottom: 3rem;
+}
+.pb-5 {
+  padding-bottom: 3.5rem;
+}
+.br-4 {
+  border-radius: 4px;
+}
+.br-8 {
+  border-radius: 8px;
+}
+.br-12 {
+  border-radius: 12px;
+}
+.br-50 {
+  border-radius: 50%;
+}
+.border-none {
+  border: none;
+}
+/* ============ More CSS ============ */
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 16px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+}
+/* Cards */
+.cards-basic {
+  position: relative;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  min-height: 160px;
+  max-width: 90%;
+  border-radius: 8px;
+}
+.animation-fast {
+  transition: 0.3s ease-in-out;
+}
+.animation-slow {
+  transition: 1s ease-in-out;
+}
+/* Sticky Button */
+.sticky-refresh {
+  position: fixed;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: #000;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  right: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}

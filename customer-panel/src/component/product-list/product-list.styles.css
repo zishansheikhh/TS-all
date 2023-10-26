@@ -1,0 +1,111 @@
+.usp-container {
+    width: 100%;
+    margin: auto;
+    display: flex ;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.usp-container img.usp-svg {
+    width: 100px;
+}
+.usp-container h4 {
+    font-weight: 400;
+}
+/* Category css */
+.mobile-category-slider-container {
+    height: 315px;
+    display: block;
+}
+.mobile-category-slider-container .cards-basic.category-card {
+    border-radius: 12px;
+    height: 200px;
+    margin: 50px auto;
+}
+.mobile-category-slider-container .cards-basic.category-card img {
+    width: 180px;
+    border-radius: 12px;
+}
+/* product list */
+.product-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.product-card-wrapper {
+    height: auto;
+    margin-bottom: 50px;
+}
+.product-card-wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+.product-card {
+    border-radius: 12px;
+    height: auto;
+    margin: 10px auto;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+.product-info,
+.product-action {
+    height: auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+.product-info span,
+.product-info p,
+.product-action span,
+.product-action p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+.product-action p,.product-info span {
+    text-decoration: none;
+} 
+.pc-category-slider-container {
+    display: none;
+}
+/* Media Query */
+@media (min-width: 999px) {
+    .pc-category-slider-container {
+        display: block;
+    }
+    .pc-category-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pc-category-slider-container {
+        width: 100%;
+        margin: auto;
+    }
+    .pc-category-container .cards-basic.category-card {
+        border-radius: 18px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .pc-category-container .cards-basic.category-card img {
+        border-radius: 18px;
+        width: 100%;
+    }
+    .mobile-category-slider-container {
+        display: none;
+    }
+    .product-list-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .product-info span,
+    .product-info p,
+    .product-action span,
+    .product-action p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+.footer-container {
+    display: none;
+}
+@media (min-width: 999px) {
+    .footer-container {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    .footer-wrapper {
+        padding: 80px 50px;
+        background: rgb(20, 35, 46);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-wrapper img {
+        width: 150px;
+    }
+    .footer-wrapper h2 {
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+    }
+    .footer-wrapper li {
+        list-style: none;
+    }
+    .footer-wrapper li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        line-height: 30px;
+    }
+    .footer-wrapper input {
+        padding: 10px;
+        border-radius: 12px 0 0 12px;
+        border: none;
+        font-size: 1rem;
+    }
+    .footer-wrapper button {
+        color: rgb(255, 255, 255);
+        background: rgb(255, 167, 0);
+        padding: 12px;
+        border: none;
+        border-radius: 0 12px 12px 0;
+        font-size: 1rem;
+    }
+    .footer-wrapper p {
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}

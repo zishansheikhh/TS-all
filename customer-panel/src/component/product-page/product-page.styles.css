@@ -1,0 +1,513 @@
+/* slider */
+.product-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product-page-right-side {
+    width: 100%;
+}
+.product-page-left-side {
+    width: 100%;
+
+}
+.product-img-container {
+    width: 65%;
+    margin: auto;
+}
+.product-gallery-card {
+    max-width: 100%;
+}
+.product-gallery-card img {
+    width: 100%;
+}
+.product-price-container {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.desktop-customization {
+    display: none;
+}
+.customization-container [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+} 
+/* IMAGE STYLES */
+.customization-container [type=radio] + img {
+    cursor: pointer;
+    width: 100px;
+}
+/* CHECKED STYLES */
+.customization-container [type=radio]:checked + img {
+    outline: 2px solid rgb(255, 167, 0);
+}
+/* customization modal css */
+body.customization-modal .active-modal {
+    overflow-y: hidden;
+}
+.customization-modal .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+.customization-modal .modal,
+.customization-modal .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.customization-modal .overlay {
+    background: rgba(49,49,49,0.8);
+}
+.customization-modal .modal-content {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 12px;
+    max-width: 600px;
+    min-width: 300px;
+    height: 620px;
+}
+.customization-modal .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 6px;
+    border: none;
+    background: inherit;
+}
+.modal-content {
+    overflow: auto;
+}
+.modal-content .modal-footer .btn {
+	margin: 4px 4px;
+}
+.modal-content .modal-content label {
+	font-size: .9rem;
+    color: #353535;
+}
+.modal-content .material-icons {
+	color: #000;
+}
+.modal-content h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 35px 0 0 0;
+    font-weight: 600;
+}
+.modal-content img {
+	width: 80px;
+	height: 80px;
+}
+a.card {
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+	border-radius: 12px;
+    width: 132px;
+    height: 132px;
+    display: inline-flex;
+	align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 12px;
+}
+.modal-content fieldset {
+    background: inherit;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 6px;
+    position: relative;
+}
+.modal-content fieldset:not(:first-of-type) {
+    display: none;
+}
+.gender-dropdown {
+    border-radius: 4px;
+    border: 1px solid #d7d7d7;
+    font-size: 16px;
+    padding: 10px;
+}
+.modal-content input,
+.modal-content textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #14232e;
+    background-color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.modal-content input:focus,
+.modal-content textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgb(255, 136, 0);
+    outline-width: 0
+}
+.modal-content .action-button {
+    width: 100px;
+    background: rgb(255, 136, 0);
+    color: white;
+    border: 0 none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+.modal-content .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+.modal-content .action-button-previous {
+    width: 100px;
+    background: #616161;
+    color: white;
+    border: 0 none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+.modal-content .action-button-previous:hover,
+.modal-content .action-button-previous:focus {
+    background-color: #000000
+}
+.fs-title {
+    font-size: 25px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+.steps {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+#progressbar {
+    overflow: hidden;
+    color: lightgrey;
+    padding-left: 2px;
+}
+#progressbar .active {
+    color: #ff8800;
+}
+#progressbar li {
+    list-style-type: none;
+    width: 12%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+#progressbar li:before {
+    width: 10px;
+    height: 10px;
+    display: block;
+    color: #ff8800;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 4px;
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    z-index: -1;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #ff8800
+}
+#progressbar #basic-info:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #scan-info:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #body-param:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #body-fit:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #body-fit-xtra:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #cloth-fit:before {
+	font-family: "Material Symbols";
+    content: "";
+}
+#progressbar #submit-form-fit:before {
+    font-family: "Material Symbols";
+    content: ""
+}
+.fit-image {
+    width: 98%;
+    object-fit: cover
+}
+.body-figure-fit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+	margin-bottom: 25px;
+    margin-top: 25px;
+	height: 280px;
+}
+.body-figure-fit label {
+	font-size: 0.8rem;
+	display: grid;
+	align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.body-figure-fit input[type="radio"] {
+    display: none;
+}
+.body-figure-fit [type="radio"]:not(:checked)+span:before, 
+.body-figure-fit [type="radio"]:not(:checked)+span:after, 
+.body-figure-fit [type="radio"]:checked+span:before, [type="radio"]:checked+span:after, 
+.body-figure-fit [type="radio"].with-gap:checked+span:before, 
+.body-figure-fit [type="radio"].with-gap:checked+span:after {
+    border-radius: 8px;
+}
+.body-figure-fit [type="radio"]:not(:checked)+span,
+.body-figure-fit [type="radio"]:checked+span {
+    position: relative;
+    padding-left: 120px;
+    height: 125px;
+    line-height: 25px;
+}
+.body-figure-fit [type="radio"]+span:before, 
+.body-figure-fit [type="radio"]+span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120px;
+	width: 120px;
+    transition: none;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.body-figure-fit input,
+.body-figure-fit textarea {
+    width: 50% !important;
+}
+.body-figure-fit [type="radio"]:checked+span:after, 
+.body-figure-fit [type="radio"].with-gap:checked+span:after {
+    background-color: #ffffff;
+}
+.body-figure-fit [type="radio"]:checked+span:after, 
+.body-figure-fit [type="radio"].with-gap:checked+span:before, 
+.body-figure-fit [type="radio"].with-gap:checked+span:after {
+    border: 1px solid #ff8800;
+}
+.body-figure-fit [type="radio"]:not(:checked)+span:before, 
+.body-figure-fit [type="radio"]:not(:checked)+span:after {
+    border: 1px solid #5a5a5a;
+}
+/* body fit */
+.body-figure-fit [type="radio"]#Thin+span:before, 
+.body-figure-fit [type="radio"]#Thin+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Rectangle+span:before, 
+.body-figure-fit [type="radio"]#Rectangle+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Inverted+span:before, 
+.body-figure-fit [type="radio"]#Inverted+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Oval+span:before, 
+.body-figure-fit [type="radio"]#Oval+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+/* belly and hips men */
+.body-figure-fit [type="radio"]#CurveB+span:before, 
+.body-figure-fit [type="radio"]#CurveB+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Average+span:before, 
+.body-figure-fit [type="radio"]#Average+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#FlatB+span:before, 
+.body-figure-fit [type="radio"]#FlatB+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+/* tshirt fits */
+.body-figure-fit [type="radio"]#Tailor+span:before, 
+.body-figure-fit [type="radio"]#Tailor+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#TSlim+span:before, 
+.body-figure-fit [type="radio"]#TSlim+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#TDropShoulder+span:before, 
+.body-figure-fit [type="radio"]#TDropShoulder+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#TOversized+span:before, 
+.body-figure-fit [type="radio"]#TOversized+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+/* shirt fits */
+.body-figure-fit [type="radio"]#Tailor+span:before, 
+.body-figure-fit [type="radio"]#Tailor+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Slim+span:before, 
+.body-figure-fit [type="radio"]#Slim+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Regular+span:before, 
+.body-figure-fit [type="radio"]#Regular+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Oversized+span:before, 
+.body-figure-fit [type="radio"]#Oversized+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#OverShirt+span:before, 
+.body-figure-fit [type="radio"]#OverShirt+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Collar+span:before, 
+.body-figure-fit [type="radio"]#Collar+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Button+span:before, 
+.body-figure-fit [type="radio"]#Button+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#Pleads+span:before, 
+.body-figure-fit [type="radio"]#Pleads+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#RNeck+span:before, 
+.body-figure-fit [type="radio"]#RNeck+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.body-figure-fit [type="radio"]#VNeck+span:before, 
+.body-figure-fit [type="radio"]#VNeck+span:after {
+	background-image: url(../../assets/sizeandfits/T-shirt_relaxed.png);
+}
+.OtherCustomization [type="radio"]:not(:checked)+span,
+.OtherCustomization [type="radio"]:checked+span {
+    padding-left: 16px;
+	height: 25px;
+}
+.OtherCustomization .modal-content input{
+    width: 6% !important;
+}
+/*  Description  */
+.description-dropdown {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.description-dropdown .dropdown-header {
+    line-height: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+/* cta container */
+.product-page-cta-container {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.product-page-cta-container a,
+.scan-button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 4px 26px;
+    margin: 0.65rem 0;
+    text-align: center;
+    display: block;
+}
+.scan-button {
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
+
+}
+.product-page-cta-container a {
+    border: 2px solid rgb(255, 167, 0);
+    background: rgb(255, 167, 0);
+    color: #fff;
+}
+/* Media Query */
+@media (min-width: 999px) {
+    .page-navigation-bar {
+        display: none;
+    }
+    .product-page-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .product-page-right-side {
+        width: 35%;
+    }
+    .product-page-left-side {
+        width: 65%;
+    
+    }
+}
